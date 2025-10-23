@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>web page</title>
+<h1 style=color:pink><flavours></h1>
+<body>
+<center>
+<table border="2">
+<tr>
+<th>Flavours</th>
+<th>cost</th> 
+<th>KG</th>
+</tr>
+<tr>
+<td>BLACKFOREST</td>
+<td>450</td>
+<td>1/2</td>
+</tr>
+<tr>
+<td>RED VELVET</td>
+<td>500</td>
+<td>1/2</td>
+</tr>
+<tr>
+<td>WHITE FOREST</td>
+<td>450</td>
+<td>1/2</td>
+</tr>
+<tr>
+<td>HONEY CAKE</td>
+<td>800</td>
+<td>1</td>
+</tr>
+<tr>
+<td>BUTTER SCOTHCH</td>
+<td>850</td>
+<td>1</td>
+</tr>
+<tr>
+<td>CHOCOLAVA</td>
+<td>900</td>
+<td>1</td>
+</tr>
+<table>
+</center>
+</body>
+</html>
+
