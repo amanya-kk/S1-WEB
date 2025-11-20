@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Validation</title>
+</head>
+<body style="background-color:green; color:white; font-family:arial;">
+  <h2>Form Validation</h2>
+
+  <form onsubmit="return validationForm()">
+    Name:<br>
+    <input type="text" id="name"><br>
+
+    Email:<br>
+    <input type="text" id="email"><br>
+
+    Password:<br>
+    <input type="password" id="password"><br>
+
+    Confirm Password:<br>
+    <input type="password" id="confirm"><br><br>
+
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit">
+  </form>
+
+  <script>
+    function validationForm() {
+      var name = document.getElementById("name").value.trim();
+      var email = document.getElementById("email").value.trim();
+      var password = document.getElementById("password").value;
+      var confirm = document.getElementById("confirm").value;
+
+     
+      if (name == "" || email == "" || password == "" || confirm == "") {
+        alert("Please fill all fields.");
+        return false;
+      }
+
+      
+      if (password !== confirm) {
+        alert("Passwords do not match.");
+        return false;
+      }
+
+     
+      if (email.indexOf("@") == -1 || email.indexOf(".") == -1) {
+        alert("Enter a valid email address.");
+        return false;
+      }
+
+      alert("Form submitted successfully!");
+      return true;
+    }
+  </script>
+</body>
+</html>
+ 
